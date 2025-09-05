@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Custom Login Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f4f6;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    h1 {
+      color: #333;
+      margin-bottom: 30px;
+    }
+    .login-btn {
+      display: block;
+      width: 250px;
+      padding: 12px;
+      margin: 10px 0;
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 6px;
+      text-decoration: none;
+      color: white;
+      transition: background 0.3s;
+    }
+    .google {
+      background: #db4437;
+    }
+    .google:hover {
+      background: #c23321;
+    }
+    .github {
+      background: #333;
+    }
+    .github:hover {
+      background: #111;
+    }
+  </style>
+</head>
+<body>
+  <h1>Login</h1>
+  <a class="login-btn google" href="http://localhost:8090/oauth2/authorization/google">Login with Google</a>
+  <a class="login-btn github" href="http://localhost:8090/oauth2/authorization/github">Login with GitHub</a>
+</body>
+</html>
